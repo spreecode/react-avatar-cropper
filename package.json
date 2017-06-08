@@ -2,8 +2,7 @@
   "name": "react-avatar-cropper",
   "version": "0.2.0",
   "repository": "https://github.com/yusupova/react-avatar-cropper",
-  "description": "A fork of an avatar cropper by Justin Schiff
-  (https://github.com/DropsOfSerenity/react-avatar-cropper), using semantic-ui",
+  "description": "A fork of an avatar cropper by Justin Schiff (https://github.com/DropsOfSerenity/react-avatar-cropper), using semantic-ui",
   "main": "dist/ReactAvatarCropper.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
