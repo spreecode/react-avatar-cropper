@@ -21,7 +21,9 @@
     "react"
   ],
   "dependencies": {
-    "react-bootstrap": "^0.30.2",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "semantic-ui-react": "^0.68.5",
     "warning": "^2.1.0"
   },
   "peerDependencies": {
