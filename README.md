@@ -2,7 +2,8 @@
 
 This is a fork of React Avatar Cropper by Justin
 (https://github.com/DropsOfSerenity/react-avatar-cropper) using
-semantic-ui-react components instead of bootstrap.
+semantic-ui-react components instead of bootstrap and working on mobile devices
+too.
 
 React Avatar Cropper aims to be an out of the box solution to solve the avatar cropping problem for 99% of common use cases. Most of the time you want a modal to pop up, allow the user to crop their uploaded image, and then you want to receive that base64 data to display and send to the server. React Avatar Cropper takes care of this use case.
 
