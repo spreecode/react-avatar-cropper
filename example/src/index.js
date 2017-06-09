@@ -42,7 +42,7 @@ var App = React.createClass({
         </div>
         {this.state.cropperOpen &&
           <AvatarCropper
-            modalOptions={{dimmer: 'blurring'}}
+            modalOptions={{dimmer: 'blurring', size: 'small'}}
             onRequestHide={this.handleRequestHide}
             cropperOpen={this.state.cropperOpen}
             onCrop={this.handleCrop}

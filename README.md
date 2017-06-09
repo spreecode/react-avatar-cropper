@@ -66,7 +66,7 @@ import AvatarCropper from 'react-avatar-cropper'
 render() {
   return (
     <AvatarCropper
-      modalOptions={{dimmer: 'blurring'}}
+      modalOptions={{dimmer: 'blurring', size: 'small'}}
       onRequestHide={this.handleRequestHide}
       onCrop={this.handleCrop}
       image={this.state.img}

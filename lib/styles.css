@@ -98,3 +98,7 @@
 .AvatarCropper-base canvas {
   cursor: move;
 }
+
+.AvatarCropper-canvas {
+  padding: 30px 0;
+}
