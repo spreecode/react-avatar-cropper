@@ -18,7 +18,7 @@ There is a demo on http://dropsofserenity.github.io/react-avatar-cropper/
 In your project
 
 ```shell
-npm install --save react-avatar-cropper
+npm install --save https://github.com/yusupova/react-avatar-cropper
 ```
 react-avatar-cropper also depends on react obviously :)
 
