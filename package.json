@@ -1,6 +1,6 @@
 {
   "name": "react-avatar-cropper",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "repository": "https://github.com/yusupova/react-avatar-cropper",
   "description": "A fork of an avatar cropper by Justin Schiff (https://github.com/DropsOfSerenity/react-avatar-cropper), using semantic-ui",
   "main": "dist/ReactAvatarCropper.min.js",
