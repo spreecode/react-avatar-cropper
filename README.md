@@ -3,16 +3,19 @@
 This is a fork of React Avatar Cropper by Justin
 (https://github.com/DropsOfSerenity/react-avatar-cropper) using
 semantic-ui-react components instead of bootstrap and working on mobile devices
-too.
+too. The package was also updated to use with react 16 and wepack 4.
 
 React Avatar Cropper aims to be an out of the box solution to solve the avatar cropping problem for 99% of common use cases. Most of the time you want a modal to pop up, allow the user to crop their uploaded image, and then you want to receive that base64 data to display and send to the server. React Avatar Cropper takes care of this use case.
 
 Taking heavy inspiration from slack's and facebook's user photo cropper, react-avatar-cropper is here to make it easy.
 
 
-## Demo
+## Example
+```shell
+npm run start
+```
 
-There is a demo on http://dropsofserenity.github.io/react-avatar-cropper/
+Then go to http://localhost:8080/webpack-dev-server/
 
 ## Installation
 
@@ -80,7 +83,7 @@ render() {
 }
 ```
 
-## Example
+## Original Example
 
 There is an example of this common use case on the page for this plugin.
 Most importantly we pass the cropped DataURI back through your provided
