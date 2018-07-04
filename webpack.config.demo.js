@@ -6,13 +6,13 @@ module.exports = {
   },
 
   output: {
-    filename: './example/bundle.js',
+    filename: __dirname + '/example/bundle.js',
   },
 
   module: {
-    loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader?optional=es7.objectRestSpread"},
+    rules: [
+      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"},
       { test: /\.css$/, loader: "style-loader!css-loader" }
     ]
-  },
+  }
 };

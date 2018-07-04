@@ -8,7 +8,7 @@ module.exports = {
 
   output: {
     filename: "ReactAvatarCropper.min.js",
-    path: "./dist",
+    path: __dirname + "/dist",
     libraryTarget: "umd",
     library: "ReactAvatarCropper"
   },
@@ -20,15 +20,9 @@ module.exports = {
   },
 
   module: {
-    loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader?optional=es7.objectRestSpread"},
+    rules: [
+      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"},
       { test: /\.css$/, loader: "style-loader!css-loader" }
     ]
-  },
-
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {warnings: false}
-    })
-  ]
+  }
 };
