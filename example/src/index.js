@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import ReactDom from 'react-dom'
+import {render} from 'react-dom'
 import AvatarCropper from '../../lib'
 
 class App extends Component {
@@ -36,7 +36,7 @@ class App extends Component {
     return (
       <div>
         <div className="avatar-photo">
-          <FileUpload handleFileChange={this.handleFileChange} />
+          <FileUpload handleFileChange={this.handleFileChange} changePic={this.changePic} />
           <div className="avatar-edit">
             <span>Click to Pick Avatar</span>
             <i className="fa fa-camera"></i>
@@ -66,11 +66,13 @@ class FileUpload extends Component {
 
     if (!file) return
 
-    reader.onload = function(img) {
-      ReactDom.findDOMNode(this.refs.in).value = '';
-      this.props.handleFileChange(img.target.result);
-    }.bind(this)
-    reader.readAsDataURL(file)
+    reader.addEventListener("load", () => {
+      this.props.handleFileChange(reader.result)
+    }, false);
+
+    if (file) {
+      reader.readAsDataURL(file);
+    }
   }
 
   render() {
@@ -80,4 +82,4 @@ class FileUpload extends Component {
   }
 }
 
-ReactDom.render(<App />, document.getElementById('content'))
+render(<App />, document.getElementById('content'))
