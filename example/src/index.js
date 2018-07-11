@@ -20,7 +20,7 @@ class App extends Component {
     })
   }
 
-  handleCrop = (dataURI) => {
+  handleCrop = (dataURI, file) => {
     this.setState({
       cropperOpen: false,
       img: null,
@@ -55,24 +55,15 @@ class App extends Component {
           />
         }
       </div>
-    )
+   )
   }
 }
 
 class FileUpload extends Component {
-  handleFile = (e) => {
+  handleFile = (e, f) => {
     let reader = new FileReader()
     let file = e.target.files[0]
-
-    if (!file) return
-
-    reader.addEventListener("load", () => {
-      this.props.handleFileChange(reader.result)
-    }, false);
-
-    if (file) {
-      reader.readAsDataURL(file);
-    }
+    this.props.handleFileChange(file)
   }
 
   render() {
