@@ -79,8 +79,7 @@ render() {
       image={this.state.img}
       width={400}
       height={400}
-      //return image with canvas size instead of original size, by default -
-      true
+      //return image with canvas size instead of original size, by default true
       isOriginalSize={false}
     />
   );
