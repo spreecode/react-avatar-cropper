@@ -5,7 +5,7 @@ This is a fork of React Avatar Cropper by Justin
 semantic-ui-react components instead of bootstrap and working on mobile devices
 too. The package was also updated to use with react 16 and wepack 4.
 
-React Avatar Cropper aims to be an out of the box solution to solve the avatar cropping problem for 99% of common use cases. Most of the time you want a modal to pop up, allow the user to crop their uploaded image, and then you want to receive that base64 data to display and send to the server. React Avatar Cropper takes care of this use case.
+React Avatar Cropper aims to be an out of the box solution to solve the avatar cropping problem for 99% of common use cases. Most of the time you want a modal to pop up, allow the user to crop their uploaded image, and then you want to receive that base64 data to display or file blob and send it to the server. React Avatar Cropper takes care of this use case.
 
 Taking heavy inspiration from slack's and facebook's user photo cropper, react-avatar-cropper is here to make it easy.
 
@@ -57,7 +57,10 @@ Add semantic-ui styles for modal proper appearance.
 
 ## Usage
 
-Usage is fairly simple, you can check the /example folder on github for a slightly more complex use case (the use case you see above in the demo). AvatarCropper simple takes a width and a height to determine what size avatar you would like. AvatarCropper then takes an image property where you can pass an external image, a user uploaded data URI or whatever you would like. An onRequestHide function is passed to the underlying modal so you can decide how to dismiss the modal. Lastly onCrop callback function is required, and gives you back the cropped Image, for you to do with as you wish.
+Usage is fairly simple, you can check the /example folder for a slightly more complex use case (the use case you see above in the demo).
+AvatarCropper simple takes a width and a height to determine what size avatar you would like. Then it takes an image property where you can pass an external image file.
+onRequestHide function is passed to the underlying modal so you can decide how to dismiss the modal.
+Lastly onCrop callback function is required, and gives you back the cropped Image URI and file.
 
 ```js
 // require the component
@@ -76,7 +79,8 @@ render() {
       image={this.state.img}
       width={400}
       height={400}
-      //return image with canvas size instead of original size
+      //return image with canvas size instead of original size, by default -
+      true
       isOriginalSize={false}
     />
   );
@@ -93,11 +97,5 @@ Check out http://dropsofserenity.github.io/react-avatar-cropper/ for more exampl
 
 ## Contributing
 
-Feel free to place issues on the issue tracker or place a pull request
-regarding any functionality. I would like to keep this package limited
-to providing a great solution for the wide 99% use case that people have
-for avatar croppers.
-
------------------------
-
-Thanks for looking! <3
+Feel free to place issues on the issue tracker or a pull request
+regarding any functionality.
