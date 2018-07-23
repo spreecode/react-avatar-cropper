@@ -1,3 +1,7 @@
+## 1.2.1
+
+* Determine orientation of JPEG images and automatically rotate them (usually an issue when uploading from mobile devices)
+
 ## 1.1.1
 
 * Bugs fixed:
