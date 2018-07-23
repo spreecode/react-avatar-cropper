@@ -1,3 +1,14 @@
+## 1.1.0
+
+* now cropper simply accept image file instead of dataURL of it, through same
+prop `image`
+* onCrop callback now returns two arguments: cropped image dataURI and image file
+
+## 1.0.0
+
+* updated to react 16 and webpack 4 and at least making sure it works with it
+* codestyle updated (ES6)
+
 ## 0.4.0
 
 * return original cropped size image by default, instead of given canvas size
