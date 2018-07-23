@@ -1,3 +1,9 @@
+## 1.1.1
+
+* Bugs fixed:
+  ** return image file too when original image is not requested;
+  ** pass isOriginalSize prop down to the Cropper.
+
 ## 1.1.0
 
 * now cropper simply accept image file instead of dataURL of it, through same

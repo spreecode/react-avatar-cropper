@@ -46,6 +46,7 @@ class App extends Component {
         {this.state.cropperOpen &&
           <AvatarCropper
             modalOptions={{header: 'Crop image', dimmer: 'blurring', size: 'small'}}
+            isOriginalSize={false}
             onRequestHide={this.handleRequestHide}
             cropperOpen={this.state.cropperOpen}
             onCrop={this.handleCrop}
