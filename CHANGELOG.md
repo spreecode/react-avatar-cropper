@@ -5,8 +5,8 @@
 ## 1.1.1
 
 * Bugs fixed:
-  ** return image file too when original image is not requested;
-  ** pass isOriginalSize prop down to the Cropper.
+  * return image file too when original image is not requested;
+  * pass isOriginalSize prop down to the Cropper.
 
 ## 1.1.0
 
